@@ -1,6 +1,6 @@
 name: "📊 Benchmark Results"
 description: "Submit your benchmark results to help improve the project"
-title: "📊 Benchmark Results"
+title: "📊 Benchmark Results: "
 labels: ["type: benchmark"]
 body:
   - type: markdown
