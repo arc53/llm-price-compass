@@ -16,8 +16,15 @@ body:
       label: "☁️ Cloud Provider"
       description: "Select the cloud provider you used for the benchmark."
       options:
-        - AWS
+        - AWS EC2
+        - AWS Sagemaker
         - GCP
+        - Azure
+        - Oracle Cloud
+        - IBM Cloud
+        - Alibaba Cloud
+        - Tencent Cloud
+        - DigitalOcean
         - Scaleway
         - RunPod
         - Other
