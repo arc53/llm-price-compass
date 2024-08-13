@@ -17,9 +17,15 @@ body:
       description: "Select the cloud provider you used for the benchmark."
       options:
         - AWS
-        - GCP
         - Scaleway
         - RunPod
+        - GCP
+        - Azure
+        - IBM Cloud
+        - Oracle Cloud
+        - Alibaba Cloud
+        - Tencent Cloud
+        - DigitalOcean
         - Other
 
   - type: input
