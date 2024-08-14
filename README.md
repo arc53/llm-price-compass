@@ -19,6 +19,7 @@ Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for information abou
 ## Llama 3.1 instruct 70b comparison
 ![CleanShot 2024-08-14 at 10 14 54@2x](https://github.com/user-attachments/assets/2b21f7e6-3874-4ff6-8f21-d692b37d17d6)
 
+[Source](https://github.com/arc53/llm-price-compass/blob/main/LLM-Provider-comparison.csv)
 
 
 ## Code Of Conduct
