@@ -6,6 +6,16 @@
   <strong>Open-Source LLM inference cost comparison</strong>
 </p>
 
+<div align="center">
+  
+  <a href="https://github.com/arc53/llm-price-compass">![link to main GitHub showing Stars number](https://img.shields.io/github/stars/arc53/llm-price-compass?style=social)</a>
+  <a href="https://github.com/arc53/llm-price-compass/blob/main/LICENSE">![link to license file](https://img.shields.io/github/license/arc53/llm-price-compass)</a>
+  <a href="https://discord.gg/n5BX8dh8rU">![link to discord](https://img.shields.io/discord/1070046503302877216)</a>
+  <a href="https://twitter.com/docsgptai">![X (formerly Twitter) URL](https://img.shields.io/twitter/follow/docsgptai)</a>
+
+ 
+</div>
+
 This project aim at collecting benchmark data from different gpu on different clouds/providers and comparing it to fixed per token costs from other providers. This project will help you choose right gpu, cloud, provider for the model of your choice.
 
 ## Contributing
