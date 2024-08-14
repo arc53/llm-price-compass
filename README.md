@@ -1,4 +1,12 @@
-# llm-price-compass
+<h1 align="center">
+  LLM price compass 🧭
+</h1>
+
+<p align="center">
+  <strong>Open-Source LLM inference cost comparison</strong>
+</p>
+
+This project aim at collecting benchmark data from different gpu on different clouds/providers and comparing it to fixed per token costs from other providers. This project will help you choose right gpu, cloud, provider for the model of your choice.
 
 ## Contributing
 
