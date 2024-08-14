@@ -1,0 +1,2 @@
+"backend","best_of","completed","cost_per_hour","date","duration","gpu","input_throughput","model_id","num_prompts","output_throughput","provider","request_rate","request_throughput","tokenizer_id","total_input_tokens","total_output_tokens","use_beam_search"
+"vllm",1,1000,0.84,"20240813-143958",385.30312793600024,"NVIDIA L4",558.5109084184351,"meta-llama/Meta-Llama-3.1-8B-Instruct",1000,513.2037236740132,"scaleway","inf",2.5953591536015312,"meta-llama/Meta-Llama-3.1-8B-Instruct",215196,197739,false
