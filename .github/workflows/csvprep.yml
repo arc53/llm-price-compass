@@ -3,9 +3,13 @@ name: Parse and Combine JSON Files into a Single JSON File and CSV
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+        - 'gpu-benchmarks.json'
+        - 'gpu-benchmarks.csv'
 
 jobs:
   parse_and_combine:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
 
     steps:
@@ -32,5 +36,5 @@ jobs:
         jq -r '(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv' gpu-benchmarks.json > gpu-benchmarks.csv
         
         git add gpu-benchmarks.json gpu-benchmarks.csv
-        git commit -m "Update gpu-benchmarks.json and gpu-benchmarks.csv"
+        git commit -m "Update gpu-benchmarks.json and gpu-benchmarks.csv [skip ci]"
         git push origin main
