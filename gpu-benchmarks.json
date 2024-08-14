@@ -1,0 +1,22 @@
+[
+  {
+    "date": "20240813-143958",
+    "provider": "scaleway",
+    "gpu": "NVIDIA L4",
+    "cost_per_hour": 0.84,
+    "backend": "vllm",
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "tokenizer_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "best_of": 1,
+    "use_beam_search": false,
+    "num_prompts": 1000,
+    "request_rate": "inf",
+    "duration": 385.30312793600024,
+    "completed": 1000,
+    "total_input_tokens": 215196,
+    "total_output_tokens": 197739,
+    "request_throughput": 2.5953591536015312,
+    "input_throughput": 558.5109084184351,
+    "output_throughput": 513.2037236740132
+  }
+]
