@@ -1,0 +1,36 @@
+name: Parse and Combine JSON Files into a Single JSON File and CSV
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  parse_and_combine:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        ssh-key: ${{ secrets.DEPLOY_KEY }}
+
+    - name: Install jq
+      run: sudo apt-get install -y jq
+
+    - name: Parsing and Combining JSON Files
+      run: |
+        git config --global user.email "a@tushynski.me"
+        git config --global user.name "Alex"
+        
+        # Find all JSON files in the benchmarks folder and its subfolders
+        json_files=$(find benchmarks -type f -name "*.json")
+        
+        # Use jq to parse and combine the JSON files
+        jq -s '.' $json_files > gpu-benchmarks.json
+        
+        # Convert JSON to CSV using jq
+        jq -r '(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv' gpu-benchmarks.json > gpu-benchmarks.csv
+        
+        git add gpu-benchmarks.json gpu-benchmarks.csv
+        git commit -m "Update gpu-benchmarks.json and gpu-benchmarks.csv"
+        git push origin main
