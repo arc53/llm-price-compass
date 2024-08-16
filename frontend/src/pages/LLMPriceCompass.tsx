@@ -30,10 +30,10 @@ const csvPath = "https://raw.githubusercontent.com/arc53/llm-price-compass/main/
 
 const chartConfig = {
     ingestPrice: {
-        label: "Ingest price"
+        label: "Ingest"
     },
     outputPrice: {
-        label: "Output price"
+        label: "Output"
     }
 }
 const LLMPriceCompass = () => {

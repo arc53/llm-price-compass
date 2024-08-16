@@ -21,7 +21,7 @@ export function BarGraph({ title, chartData, chartConfig, info }: {
   const { isDarkTheme } = useTheme();
   return (
     <div className="flex justify-center text=#1E1E1E] my-8">
-      <div className="border border-gray-300 rounded-xl w-11/12 flex flex-col  gap-6">
+      <div className="border border-gray-700 rounded-xl w-11/12 flex flex-col  gap-6">
         <h1 className="border-b p-4">
           <img className="inline mr-2" src={GraphIcon} />
           <span className="text-sm">
@@ -30,13 +30,13 @@ export function BarGraph({ title, chartData, chartConfig, info }: {
         </h1>
         <ChartContainer config={chartConfig} className="max-h-[200px] w-full mx-1">
           <BarChart accessibilityLayer data={chartData}>
-            <CartesianGrid vertical={false} />
+            <CartesianGrid vertical={false} horizontal={false}/>
             <XAxis
               dataKey="inference"
               tickLine={false}
               tickMargin={10}
               axisLine={false}
-              tickFormatter={(value) => value.slice(0, 3)}
+              tickFormatter={(value) => value.slice(0, 30)}
             />
             <ChartTooltip content={<ChartTooltipContent />} />
             <Bar dataKey="ingestPrice" fill={isDarkTheme ? "#2662D9" : "#2A9D90"} radius={4} />
