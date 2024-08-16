@@ -1,4 +1,3 @@
-import React from 'react'
 import Compass from '@/assets/compass.svg'
 import Sun from '@/assets/day-sunny.svg'
 import Github from '@/assets/git.svg'

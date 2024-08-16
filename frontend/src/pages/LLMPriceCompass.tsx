@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { BarGraph } from '@/components/BarGraph'
 import Papa from 'papaparse'
 import { useState, useEffect, useRef } from 'react'
-import { Navigate, useNavigate } from "react-router"
+import { useNavigate } from "react-router"
 
 type Pricing = {
     inference: string;
