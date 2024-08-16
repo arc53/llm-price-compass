@@ -84,7 +84,7 @@ const LLMPriceCompass = () => {
             <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-5xl">
                 LLM Price Compass
             </h1>
-            <h2 className="leading-7 mt-2 text-xl text-[#1E1E1E]">
+            <h2 className="leading-7 mt-2 text-xl text-[#1E1E1E] dark:text-[#FDFDFD]">
                 Compare LLM inference on managed providers and GPU’s on Clouds
             </h2>
             <div className="flex justify-start gap-2 py-4">
@@ -93,7 +93,9 @@ const LLMPriceCompass = () => {
                 }}>
                     Explore Datagrid
                 </Button>
-                <Button variant="ghost">
+                <Button variant="ghost" onClick={()=>{
+                    window.location.href = 'https://github.com/arc53/llm-price-compass/issues/new?assignees=&labels=type%3A+benchmark&projects=&template=benchmark_submission.yml&title=%F0%9F%93%8A+Benchmark+Results%3A+'
+                }}>
                     Submit Benchmark
                 </Button>
             </div>
