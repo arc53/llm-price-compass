@@ -3,10 +3,9 @@ name: Parse and Combine JSON Files into a Single JSON File and CSV
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-        - 'gpu-benchmarks.json'
-        - 'gpu-benchmarks.csv'
-        - 'LLM-Provider-comparison.csv'
+    paths:
+      - 'benchmarks/**'
+      - 'managed-providers.json'
 
 jobs:
   parse_and_combine:
