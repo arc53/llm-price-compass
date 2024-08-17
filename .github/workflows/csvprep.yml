@@ -39,7 +39,8 @@ jobs:
       run: python3 managed-to-csv.py
     - name: Appending GPU benchmarks
       run: python3 gpu-bench-to-csv.py
-        
+    - name: Commit and push changes
+      run: |
         git add gpu-benchmarks.json gpu-benchmarks.csv LLM-Provider-comparison.csv
         git commit -m "Update gpu-benchmarks.json and gpu-benchmarks.csv [skip ci]"
         git push origin main
