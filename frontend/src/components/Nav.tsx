@@ -17,7 +17,7 @@ const Nav = () => {
                 <span className='text-[#8B8989]'>by Arc53</span>
             </div>
             <div className='flex gap-4'>
-                <a target='_blank' href='https://github.com/arc53/docsgpt'>
+                <a target='_blank' href='https://github.com/arc53/llm-price-compass'>
                     <img className='filter dark:invert' src={Github} />
                 </a>
                 <a target='_blank' href='https://x.com/docsgptai'>
