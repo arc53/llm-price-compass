@@ -7,11 +7,13 @@ import {
 import GraphIcon from '@/assets/graphs.svg'
 import { useTheme } from "@/ThemeContext"
 import { CartesianGrid, XAxis } from "recharts"
+
 type Pricing = {
   inference: string;
   ingestPrice: number | null;
   outputPrice: number | null;
 }
+
 export function BarGraph({ title, chartData, chartConfig, info }: {
   title: string,
   chartData: Pricing[],
@@ -19,6 +21,9 @@ export function BarGraph({ title, chartData, chartConfig, info }: {
   info: string
 }) {
   const { isDarkTheme } = useTheme();
+
+  const filteredData = chartData.filter(data => data.ingestPrice !== null || data.outputPrice !== null);
+
   return (
     <div className="flex justify-center text=#1E1E1E] my-8">
       <div className="border border-gray-700 rounded-xl w-11/12 flex flex-col  gap-6">
@@ -29,7 +34,7 @@ export function BarGraph({ title, chartData, chartConfig, info }: {
           </span>
         </h1>
         <ChartContainer config={chartConfig} className="max-h-[200px] w-full mx-1">
-          <BarChart accessibilityLayer data={chartData}>
+          <BarChart accessibilityLayer data={filteredData}>
             <CartesianGrid vertical={false} horizontal={false}/>
             <XAxis
               dataKey="inference"

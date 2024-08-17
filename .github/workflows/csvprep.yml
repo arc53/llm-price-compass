@@ -6,6 +6,7 @@ on:
     paths-ignore:
         - 'gpu-benchmarks.json'
         - 'gpu-benchmarks.csv'
+        - 'LLM-Provider-comparison.csv'
 
 jobs:
   parse_and_combine:
@@ -34,7 +35,11 @@ jobs:
         
         # Convert JSON to CSV using jq
         jq -r '(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv' gpu-benchmarks.json > gpu-benchmarks.csv
+    - name: Parsing managed to create LLM-Provider-comparison csv
+      run: python3 managed-to-csv.py
+    - name: Appending GPU benchmarks
+      run: python3 gpu-bench-to-csv.py
         
-        git add gpu-benchmarks.json gpu-benchmarks.csv
+        git add gpu-benchmarks.json gpu-benchmarks.csv LLM-Provider-comparison.csv
         git commit -m "Update gpu-benchmarks.json and gpu-benchmarks.csv [skip ci]"
         git push origin main

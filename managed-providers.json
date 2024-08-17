@@ -1,0 +1,92 @@
+[
+    {
+    "provider": "Groq",
+    "model": "LLama 3.1 8b instruct",
+    "ingest": "$0.05",
+    "output": "$0.08"
+    },
+    {
+    "provider": "Groq",
+    "model": "LLama 3.1 70b instruct",
+    "ingest": "$0.59",
+    "output": "$0.79"
+    },
+    {
+    "provider": "Deepinfra",
+    "model": "LLama 3.1 8b instruct",
+    "ingest": "$0.06",
+    "output": "$0.06"
+    },
+    {
+    "provider": "Deepinfra",
+    "model": "LLama 3.1 70b instruct",
+    "ingest": "$0.52",
+    "output": "$0.75"
+    },
+    {
+    "provider": "OctoAI",
+    "model": "LLama 3.1 8b instruct",
+    "ingest": "$0.15",
+    "output": "$0.15"
+    },
+    {
+    "provider": "OctoAI",
+    "model": "LLama 3.1 70b instruct",
+    "ingest": "$0.90",
+    "output": "$0.90"
+    },
+    {
+    "provider": "Lepton AI",
+    "model": "LLama 3.1 8b instruct",
+    "ingest": "$0.07",
+    "output": "$0.07"
+    },
+    {
+    "provider": "Lepton AI",
+    "model": "LLama 3.1 70b instruct",
+    "ingest": "$0.80",
+    "output": "$0.80"
+    },
+    {
+    "provider": "Fireworks AI",
+    "model": "LLama 3.1 8b instruct",
+    "ingest": "$0.20",
+    "output": "$0.20"
+    },
+    {
+    "provider": "Fireworks AI",
+    "model": "LLama 3.1 70b instruct",
+    "ingest": "$0.90",
+    "output": "$0.90"
+    },
+    {
+    "provider": "Perplexity",
+    "model": "LLama 3.1 8b instruct",
+    "ingest": "$0.20",
+    "output": "$0.20"
+    },
+    {
+    "provider": "Perplexity",
+    "model": "LLama 3.1 70b instruct",
+    "ingest": "$1.00",
+    "output": "$1.00"
+    },
+    {
+    "provider": "Together.ai",
+    "model": "LLama 3.1 8b instruct",
+    "ingest": "$0.18",
+    "output": "$0.18"
+    },
+    {
+    "provider": "Together.ai",
+    "model": "LLama 3.1 70b instruct",
+    "ingest": "$0.88",
+    "output": "$0.88"
+    },
+    {
+    "provider": "Databricks",
+    "model": "LLama 3.1 70b instruct",
+    "ingest": "$1.00",
+    "output": "$1.00"
+    }
+]
