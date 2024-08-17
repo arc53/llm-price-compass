@@ -81,6 +81,13 @@ body:
       label: "⬇️ Output Throughput"
       description: "Enter the output throughput value from the benchmark."
       placeholder: "1000"
+      
+  - type: textarea
+    id: notes
+    attributes:
+      label: "📝 Notes (Optional)"
+      description: "If you'd like, provide any additional notes or details on how you ran the benchmark."
+      placeholder: "I ran the benchmark using the following command: ..."
 
   - type: checkboxes
     id: terms
