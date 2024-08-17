@@ -18,6 +18,10 @@
 
 This project aim at collecting benchmark data from different gpu on different clouds/providers and comparing it to fixed per token costs from other providers. This project will help you choose right gpu, cloud, provider for the model of your choice.
 
+<div align="center">
+  <a href="https://compass.arc53.com/">Dashboard </a>
+</div>
+
 ## Contributing
 
 Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for information about how to get involved. We welcome issues, questions, and pull requests.
