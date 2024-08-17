@@ -41,7 +41,7 @@ export function BarGraph({ title, chartData, chartConfig, info }: {
               tickLine={false}
               tickMargin={10}
               axisLine={false}
-              tickFormatter={(value) => value.slice(0, 30)}
+              tickFormatter={(value) => value.slice(0, 15)}
             />
             <ChartTooltip content={<ChartTooltipContent />} />
             <Bar dataKey="ingestPrice" fill={isDarkTheme ? "#2662D9" : "#2A9D90"} radius={4} />
