@@ -17,6 +17,10 @@ for item in data:
     ingest_price = ((cost_per_hour / 3600) / input_throughput) * 1000000
     output_price = ((cost_per_hour / 3600) / output_throughput) * 1000000
     
+    # Format prices with 2 decimal places and add "$" in front
+    ingest_price_formatted = f"${ingest_price:.2f}"
+    output_price_formatted = f"${output_price:.2f}"
+    
     # Append data to CSV file
     with open('LLM-Provider-comparison.csv', 'a', newline='') as csv_file:
         writer = csv.writer(csv_file)
@@ -27,6 +31,6 @@ for item in data:
         
         # Update the prices for the specific model
         if 'llama' in model_id.lower() and '8b' in model_id.lower():
-            writer.writerow([gpu, ingest_price, output_price, '', ''])
+            writer.writerow([gpu, ingest_price_formatted, output_price_formatted, '', ''])
         elif 'llama' in model_id.lower() and '70b' in model_id.lower():
-            writer.writerow([gpu, '', '', ingest_price, output_price])
+            writer.writerow([gpu, '', '', ingest_price_formatted, output_price_formatted])
