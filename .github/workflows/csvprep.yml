@@ -34,10 +34,8 @@ jobs:
         
         # Convert JSON to CSV using jq
         jq -r '(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv' gpu-benchmarks.json > gpu-benchmarks.csv
-    - name: Parsing managed to create LLM-Provider-comparison csv
-      run: python3 managed-to-csv.py
-    - name: Appending GPU benchmarks
-      run: python3 gpu-bench-to-csv.py
+    - name: Cooking CSV 🧑‍🍳
+      run: python3 csv-prep.py
     - name: Commit and push changes
       run: |
         git add gpu-benchmarks.json gpu-benchmarks.csv LLM-Provider-comparison.csv
