@@ -29,6 +29,24 @@
     "p99_itl": 291.88
   },
   {
+    "date": "20240820-143000",
+    "provider": "aws",
+    "gpu": "NVIDIA A10G",
+    "cost_per_hour": 2.84,
+    "backend": "vllm",
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "tokenizer_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "num_prompts": 1000,
+    "duration": 97.65,
+    "completed": 1000,
+    "total_input_tokens": 215196,
+    "total_output_tokens": 43140,
+    "request_throughput": 10.24,
+    "input_throughput": 2203.64,
+    "output_throughput": 441.76,
+    "issue": "https://github.com/arc53/llm-price-compass/issues/6"
+  },
+  {
     "date": "20240813-143958",
     "provider": "scaleway",
     "gpu": "NVIDIA L4",
