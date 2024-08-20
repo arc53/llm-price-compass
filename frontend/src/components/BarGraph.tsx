@@ -24,6 +24,10 @@ export function BarGraph({ title, chartData, chartConfig, info }: {
 
   const filteredData = chartData.filter(data => data.ingestPrice !== null || data.outputPrice !== null);
 
+  const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
+
+  const displayedData = isMobile ? filteredData.slice(0, 4) : filteredData;
+
   return (
     <div className="flex justify-center text=#1E1E1E] my-8">
       <div className="border border-gray-700 rounded-xl w-11/12 flex flex-col  gap-6">
@@ -34,7 +38,7 @@ export function BarGraph({ title, chartData, chartConfig, info }: {
           </span>
         </h1>
         <ChartContainer config={chartConfig} className="max-h-[200px] w-full mx-1">
-          <BarChart accessibilityLayer data={filteredData}>
+          <BarChart accessibilityLayer data={displayedData}>
             <CartesianGrid vertical={false} horizontal={false}/>
             <XAxis
               dataKey="inference"
