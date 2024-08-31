@@ -14,14 +14,14 @@
     {
     "provider": "Deepinfra",
     "model": "LLama 3.1 8b instruct",
-    "ingest": "$0.06",
-    "output": "$0.06"
+    "ingest": "$0.055",
+    "output": "$0.055"
     },
     {
     "provider": "Deepinfra",
     "model": "LLama 3.1 70b instruct",
-    "ingest": "$0.52",
-    "output": "$0.75"
+    "ingest": "$0.35",
+    "output": "$0.40"
     },
     {
     "provider": "OctoAI",
