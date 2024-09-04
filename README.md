@@ -16,7 +16,9 @@
  
 </div>
 
-This project aim at collecting benchmark data from different gpu on different clouds/providers and comparing it to fixed per token costs from other providers. This project will help you choose right gpu, cloud, provider for the model of your choice.
+This project aims to collect benchmark data from different GPUs on various clouds/providers and compare it to fixed per token costs from other providers. By utilizing our platform, you can make informed decisions on cost-effective LLM options, affordable language models, and efficient LLM GPU selections.
+
+Our comprehensive **LLM Price Comparison** tool empowers users to evaluate multiple AI models and provides insights into AI model pricing guides. This project will help you choose the right GPU and cloud provider for the model of your choice—facilitating GPU inference and LLM GPU benchmarks.
 
 <div align="center">
   <a href="https://compass.arc53.com/">Dashboard </a>
@@ -24,7 +26,7 @@ This project aim at collecting benchmark data from different gpu on different cl
 
 ## Contributing
 
-Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for information about how to get involved. We welcome issues, questions, and pull requests.
+Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for information about how to get involved. We welcome issues, questions, and pull requests. If you have insights on GPU comparisons, benchmarks, or AI model evaluations, please share them with our community.
 
 
 ## Llama 3.1 instruct 8b comparison
