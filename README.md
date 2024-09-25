@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <strong>Open-Source LLM inference cost comparison</strong>
+  <strong>Open-Source LLM inference cost comparison for compute nomads</strong>
 </p>
 
 <div align="center">
